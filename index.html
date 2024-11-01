@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goal Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Goal Visualizer</h1>
+
+    <div class="input-container">
+      <label for="goal">Enter your goal (e.g. 2500 km):</label>
+      <input type="number" id="goal" placeholder="Total goal in km" />
+
+      <label for="activity">Add your activity (e.g. 100 km):</label>
+      <input type="number" id="activity" placeholder="Activity in km" />
+
+      <button onclick="addActivity()">Add Activity</button>
+    </div>
+
+    <div class="progress-bar">
+      <div class="progress-bar-fill" id="progressFill">0%</div>
+    </div>
+
+    <div class="goal-status" id="goalStatus">0 km out of 0 km achieved.</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
